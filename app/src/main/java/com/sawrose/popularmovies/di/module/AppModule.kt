@@ -4,12 +4,12 @@ import android.app.Application
 import android.arch.lifecycle.ViewModelProvider
 import android.arch.persistence.room.Room
 import android.content.Context
-import android.graphics.Movie
 import com.readystatesoftware.chuck.ChuckInterceptor
 import com.sawrose.popularmovies.BuildConfig
 import com.sawrose.popularmovies.data.local.PopMoviesDB
 import com.sawrose.popularmovies.di.ViewModelFactory
 import com.sawrose.popularmovies.di.component.ViewModelSubComponent
+import com.sawrose.popularmovies.model.Movie
 import com.sawrose.popularmovies.utils.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides

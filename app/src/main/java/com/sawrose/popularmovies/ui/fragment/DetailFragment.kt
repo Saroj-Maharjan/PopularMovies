@@ -61,7 +61,7 @@ class DetailFragment:BaseFragment(),Injectable {
     }
 
     private fun setToolbar() {
-        toolbar.background = context.resources.getDrawable(R.drawable.toolbar_gradient)
+        toolbar.background = ContextCompat.getDrawable(context,R.drawable.toolbar_gradient)
         (activity as MainActivity).setSupportActionBar(toolbar)
         (activity as MainActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
@@ -100,7 +100,7 @@ class DetailFragment:BaseFragment(),Injectable {
             val removed = context.getString(R.string.movie_removed)
             val string = if (movie1.isFavorite()) added else removed
             val color = ContextCompat.getColor(context,R.color.colorPrimaryDark)
-            view?.snack(string){ getView().setBackgroundColor(color) }
+            view?.snack(string){ view.setBackgroundColor(color) }
         }
 
         disposable.add(d1)

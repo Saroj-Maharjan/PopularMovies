@@ -1,5 +1,6 @@
 package com.sawrose.popularmovies.di.module
 
+import com.sawrose.popularmovies.ui.fragment.DetailFragment
 import com.sawrose.popularmovies.ui.fragment.MoviesFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -9,5 +10,8 @@ abstract class FragmentBuildersModule {
 
     @ContributesAndroidInjector
     internal abstract fun moviesFragment(): MoviesFragment
+
+    @ContributesAndroidInjector
+    internal abstract fun detailFragment(): DetailFragment
 
 }
